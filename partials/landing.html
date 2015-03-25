@@ -1,10 +1,19 @@
 <div>
 	<h1>{{lol}}</h1>
 
-	<button ng-click="error.show = !error.show">Toggle error</button>
+	<button ng-click="error.show = !error.show">Toggle bounce</button>
+	<button ng-click="error2.show = !error2.show">Toggle wobble</button>
 
 	<div class="error-size">
 		<div ng-show="error.show" class="bounce">
+			<div class="block error">
+				{{error.message}}
+			</div>
+		</div>
+	</div>
+
+	<div class="error-size">
+		<div ng-show="error2.show" class="wobble">
 			<div class="block error">
 				{{error.message}}
 			</div>
