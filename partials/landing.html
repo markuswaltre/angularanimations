@@ -1,0 +1,22 @@
+<div>
+	<h1>{{lol}}</h1>
+
+	<button ng-click="error.show = !error.show">Toggle error</button>
+
+	<div class="error-size">
+		<div ng-show="error.show" class="bounce">
+			<div class="block error">
+				{{error.message}}
+			</div>
+		</div>
+	</div>
+
+	<form ng-submit="newItem(newItemText)">
+		<input type="text" ng-model="newItemText" />
+		<button type="submit">Add</button>
+	</form>
+
+	<div ng-repeat="item in items track by $index" class="block fade" ng-click="deleteItem(item)">
+		<h2>{{item}}</h2>
+	</div>
+</div>

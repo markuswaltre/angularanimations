@@ -1,0 +1,13 @@
+.block {
+	height: 50px;
+	width: 100px;
+	border-radius: 4px;
+	background-color: rgba(123, 211, 12, 1);
+	color: white;
+	font-family: 'Open Sans';
+	text-align: center;
+}
+
+.error-size {
+	width: 100px;
+}
