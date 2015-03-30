@@ -1,41 +1,40 @@
-/*With animation*/
 .fade.ng-enter, 
 .fade.ng-hide-remove {
-  -webkit-animation: enter_sequence 1s linear;
-  animation: enter_sequence 1s linear;
+  -webkit-animation: enter_sequence 0.5s linear;
+  animation: enter_sequence 0.5s linear;
 }
 
 .fade.ng-leave, 
 .fade.ng-hide-add {
-	-webkit-animation: enter_sequence 1s linear reverse;
-	-o-animation: enter_sequence 1s linear reverse;
-	animation: enter_sequence 1s linear reverse;
+	-webkit-animation: enter_sequence 0.5s linear reverse;
+	-o-animation: enter_sequence 0.5s linear reverse;
+	animation: enter_sequence 0.5s linear reverse;
 }
 
 .bounce.ng-enter, 
 .bounce.ng-hide-remove {
-  -webkit-animation: bounceIn 1s linear;
-  animation: bounceIn 1s linear;
+  -webkit-animation: bounceIn 0.5s linear;
+  animation: bounceIn 0.5s linear;
 }
 
 .bounce.ng-leave, 
 .bounce.ng-hide-add {
-	-webkit-animation: bounceIn 1s linear reverse;
-	-o-animation: bounceIn 1s linear reverse;
-	animation: bounceIn 1s linear reverse;
+	-webkit-animation: bounceIn 0.5s linear reverse;
+	-o-animation: bounceIn 0.5s linear reverse;
+	animation: bounceIn 0.5s linear reverse;
 }
 
 .wobble.ng-enter, 
 .wobble.ng-hide-remove {
-  -webkit-animation: wobble 1s linear;
-  animation: wobble 1s linear;
+  -webkit-animation: wobble 0.5s linear;
+  animation: wobble 0.5s linear;
 }
 
 .wobble.ng-leave, 
 .wobble.ng-hide-add {
-	-webkit-animation: wobble 1s linear reverse;
-	-o-animation: wobble 1s linear reverse;
-	animation: wobble 1s linear reverse;
+	-webkit-animation: wobble 0.5s linear reverse;
+	-o-animation: wobble 0.5s linear reverse;
+	animation: wobble 0.5s linear reverse;
 }
 
 @-webkit-keyframes enter_sequence {

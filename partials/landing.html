@@ -5,7 +5,7 @@
 	<button ng-click="error2.show = !error2.show">Toggle wobble</button>
 
 	<div class="error-size">
-		<div ng-show="error.show" class="bounce">
+		<div ng-show="error.show" class="bounceIn bounceOut">
 			<div class="block error">
 				{{error.message}}
 			</div>
@@ -21,11 +21,14 @@
 	</div>
 
 	<form ng-submit="newItem(newItemText)">
-		<input type="text" ng-model="newItemText" />
+		<input type="text" ng-model="newItemText" ng-autofocus="true"/>
 		<button type="submit">Add</button>
 	</form>
+	<label>Filter
+		<input type="text" ng-model="filterItems">
+	</label>
 
-	<div ng-repeat="item in items track by $index" class="block fade" ng-click="deleteItem(item)">
+	<div ng-repeat="item in items | filter:filterItems" class="block fadeIn fadeOutDown" ng-click="deleteItem(item)">
 		<h2>{{item}}</h2>
 	</div>
 </div>

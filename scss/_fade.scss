@@ -1,0 +1,14 @@
+@include keyframes(fade) {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+.fadeIn.ng-enter, 
+.fadeIn.ng-hide-remove {
+    @include animation('fade #{$speed}');
+}
+
+.fadeOut.ng-leave, 
+.fadeOut.ng-hide-add {
+    @include animationReverse('fade #{$speed}');
+}
